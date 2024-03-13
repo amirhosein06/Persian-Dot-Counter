@@ -1,0 +1,64 @@
+@font-face {
+    font-family: vazir;
+    src: url(font/vazir-font-v16.1.0/Vazir-Bold.ttf);
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #fafafa;
+}
+.counter_box{
+    width: 380px;
+    height: 70px;
+    border-radius: 15px;
+    background-color: aqua;
+    position: absolute;
+    top: calc(50% - 30px);
+    left: calc(50% - 175px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 5px;
+    box-shadow: 0px 0px 25px #dddddd;
+    background: linear-gradient(90deg,#cc2b5e, #632e75);
+}
+.counter_box input{
+    height: 50px;
+    width: 77%;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    padding-inline: 10px;
+    font-family: vazir;
+    font-weight: 900;
+    font-size: 18px;
+}
+.counter_box input::placeholder{
+    font-family: vazir;
+    font-weight: 900;
+    color: #4e4e4e;
+}
+.counter_box .preview{
+    height: 50px;
+    width: 20%;
+    border-radius: 12px;
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: vazir;
+    font-size: 25px;
+    animation: animit both 1s ;
+}
+@keyframes animit {
+    50%{
+        scale: 1.05;
+    }
+    100%{
+        scale: unset;
+    }
+}
