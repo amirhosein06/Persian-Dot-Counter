@@ -64,3 +64,6 @@ function getPersianNumbers(str)
 window.onload = ()=>{
     preview.innerHTML = getPersianNumbers(preview.innerHTML);
 }
+
+
+
