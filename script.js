@@ -1,5 +1,5 @@
 //words data
-const singDots = ["ب", "ج", "خ", "ز", "ذ", "ض", "ظ", "ن", "ف", "غ"],
+const singDots = ["ب", "ج", "خ", "ز", "ذ", "ض", "ظ", "ن", "ف", "غ","i","j"],
 trieDots = ["پ", "چ", "ژ", "ش", "ث"],
 doublDots = ["ت", "ق"],
 noDot = ["ی"];
@@ -29,7 +29,9 @@ dotinput.addEventListener("input",(e)=>{
      };
    });
 
-   preview.innerHTML = count;
+   preview.innerHTML = getPersianNumbers(count);
+   preview.style.animation = "none";
+   preview.style.animation = "animit both 1s";
 });
 
 
@@ -37,8 +39,26 @@ dotinput.addEventListener("input",(e)=>{
 
 
 //add persian number
-// function replaceDigits() {
-//     var map = ["&\#1776;","&\#1777;","&\#1778;","&\#1779;","&\#1780;","&\#1781;","&\#1782;","&\#1783;","&\#1784;","&\#1785;"]
-//     document.body.innerHTML = document.body.innerHTML.replace(/\d(?=[^<>]*(<|$))/g, function($0) { return map[$0]});
-// };
-// window.onload = replaceDigits;
+var map =
+[
+"۰","۱","۲","۳","۴",
+"۵","۶","۷","۸","۹"
+];
+
+function getPersianNumbers(str)
+{
+    var newStr = "";
+
+    str = String(str);
+
+    for(i=0; i<str.length; i++)
+    {
+        newStr += map[parseInt(str.charAt(i))];
+    }
+
+    return newStr;
+}
+
+window.onload = ()=>{
+    preview.innerHTML = getPersianNumbers(preview.innerHTML);
+}
