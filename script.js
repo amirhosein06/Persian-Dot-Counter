@@ -30,8 +30,10 @@ dotinput.addEventListener("input",(e)=>{
    });
 
    preview.innerHTML = getPersianNumbers(count);
-   preview.style.animation = "none";
-   preview.style.animation = "animit both 1s";
+   preview.classList.add("p_animotion");
+   setTimeout(() => {
+    preview.classList.remove("p_animotion");
+   }, 200);
 });
 
 

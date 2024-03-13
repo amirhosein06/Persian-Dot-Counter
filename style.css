@@ -52,13 +52,15 @@ body{
     justify-content: center;
     font-family: vazir;
     font-size: 25px;
-    animation: animit both 1s ;
+}
+.p_animotion{
+    animation: animit both 0.2s ;
 }
 @keyframes animit {
     50%{
-        scale: 1.05;
+        margin-bottom: 3px;
     }
     100%{
-        scale: unset;
+        margin: 0;
     }
 }
