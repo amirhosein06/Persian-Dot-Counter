@@ -14,7 +14,6 @@ body{
     width: 380px;
     height: 70px;
     border-radius: 15px;
-    background-color: aqua;
     position: absolute;
     top: calc(50% - 30px);
     left: calc(50% - 175px);
@@ -62,5 +61,16 @@ body{
     }
     100%{
         margin: 0;
+    }
+}
+@media screen and (max-width:500px) {
+    .counter_box{
+        width: 90%;
+        height: 70px;
+        border-radius: 15px;
+        top: calc(50% - 30px);
+        left: 5%;
+        gap: 8px;
+        padding: 5px;
     }
 }
