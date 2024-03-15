@@ -24,7 +24,7 @@ dotinput.addEventListener("input",(e)=>{
      if (trieDots.includes(item)) {
         count += 3;
      };
-     if (noDot.includes(item) && valuesplit.length > 1 && index !== (valuesplit.length -1)) {
+     if (noDot.includes(item) && valuesplit.length > 1 && index !== (valuesplit.length -1) && valuesplit[index +1] !== " ") {
         count += 2;
      };
    });
