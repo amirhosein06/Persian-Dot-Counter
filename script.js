@@ -40,6 +40,7 @@ dotinput.addEventListener("input",(e)=>{
    setTimeout(() => {
     preview.classList.remove("p_animotion");
    }, 200);
+
 });
 
 
@@ -71,6 +72,8 @@ function getPersianNumbers(str)
 window.onload = ()=>{
     preview.innerHTML = getPersianNumbers(preview.innerHTML);
 }
+
+
 
 
 
