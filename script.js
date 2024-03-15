@@ -4,9 +4,12 @@ trieDots = ["پ", "چ", "ژ", "ش", "ث"],
 doublDots = ["ت", "ق"],
 noDot = ["ی"];
 
+
+
 //document element
 const dotinput = document.querySelector(".counter_box input");
 const preview = document.querySelector(".preview");
+
 
 //counter
 dotinput.addEventListener("input",(e)=>{
@@ -28,7 +31,10 @@ dotinput.addEventListener("input",(e)=>{
         count += 2;
      };
    });
+   
 
+
+   //change preview
    preview.innerHTML = getPersianNumbers(count);
    preview.classList.add("p_animotion");
    setTimeout(() => {
@@ -60,6 +66,7 @@ function getPersianNumbers(str)
 
     return newStr;
 }
+
 
 window.onload = ()=>{
     preview.innerHTML = getPersianNumbers(preview.innerHTML);
