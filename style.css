@@ -45,7 +45,6 @@ body{
     height: 50px;
     width: 20%;
     border-radius: 12px;
-    background-color: aliceblue;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,8 +57,7 @@ body{
 @keyframes animit {
     50%{
         margin-bottom: 3px;
-    }
-    100%{
+    }100%{
         margin: 0;
     }
 }
